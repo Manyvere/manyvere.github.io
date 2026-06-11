@@ -27,7 +27,8 @@
       "category": "core",
       "isCore": true,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/dashboard.png"
+      "screenshotURL": "/screenshots/dashboard.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "tasks",
@@ -49,7 +50,8 @@
       "category": "productivity",
       "isCore": true,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/tasks.png"
+      "screenshotURL": "/screenshots/tasks.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "business-ideas",
@@ -71,7 +73,8 @@
       "category": "productivity",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/business-ideas.png"
+      "screenshotURL": "/screenshots/business-ideas.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "habit-tracker",
@@ -93,7 +96,8 @@
       "category": "productivity",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/habit-tracker.png"
+      "screenshotURL": "/screenshots/habit-tracker.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "countdown",
@@ -115,7 +119,8 @@
       "category": "productivity",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/countdown.png"
+      "screenshotURL": "/screenshots/countdown.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "health-tracker",
@@ -137,7 +142,8 @@
       "category": "health",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/health-tracker.png"
+      "screenshotURL": "/screenshots/health-tracker.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "tracker",
@@ -159,7 +165,8 @@
       "category": "health",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/tracker.png"
+      "screenshotURL": "/screenshots/tracker.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "finance",
@@ -183,7 +190,8 @@
       "category": "finance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/finance.png"
+      "screenshotURL": "/screenshots/finance.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "investments",
@@ -207,7 +215,8 @@
       "category": "finance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/investments.png"
+      "screenshotURL": "/screenshots/investments.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "torn",
@@ -231,7 +240,8 @@
       "category": "other",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/torn.png"
+      "screenshotURL": "/screenshots/torn.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "address-book",
@@ -253,7 +263,8 @@
       "category": "household",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/address-book.png"
+      "screenshotURL": "/screenshots/address-book.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "casper",
@@ -275,7 +286,8 @@
       "category": "household",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/casper.png"
+      "screenshotURL": "/screenshots/casper.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "meal-plan",
@@ -297,7 +309,8 @@
       "category": "household",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/meal-plan.png"
+      "screenshotURL": "/screenshots/meal-plan.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "recipes",
@@ -321,7 +334,8 @@
       "category": "household",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/recipes.png"
+      "screenshotURL": "/screenshots/recipes.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "project-cockpit",
@@ -346,7 +360,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/project-cockpit.png"
+      "screenshotURL": "/screenshots/project-cockpit.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "roadmap",
@@ -368,7 +383,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/roadmap.png"
+      "screenshotURL": "/screenshots/roadmap.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "architecture",
@@ -393,7 +409,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/architecture.png"
+      "screenshotURL": "/screenshots/architecture.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "design-layout",
@@ -418,7 +435,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/design-layout.png"
+      "screenshotURL": "/screenshots/design-layout.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "more",
@@ -440,7 +458,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/more.png"
+      "screenshotURL": "/screenshots/more.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "novi-chat",
@@ -464,7 +483,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/novi-chat.png"
+      "screenshotURL": "/screenshots/novi-chat.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "novi-design-lab",
@@ -486,7 +506,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/novi-design-lab.png"
+      "screenshotURL": "/screenshots/novi-design-lab.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "brand-preview",
@@ -508,7 +529,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/brand-preview.png"
+      "screenshotURL": "/screenshots/brand-preview.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "settings",
@@ -530,7 +552,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/settings.png"
+      "screenshotURL": "/screenshots/settings.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "security",
@@ -557,7 +580,8 @@
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/security.png"
+      "screenshotURL": "/screenshots/security.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "book",
@@ -579,7 +603,8 @@
       "category": "incubator",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/book.png"
+      "screenshotURL": "/screenshots/book.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "journal",
@@ -601,7 +626,8 @@
       "category": "incubator",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/journal.png"
+      "screenshotURL": "/screenshots/journal.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "smart-home",
@@ -625,7 +651,8 @@
       "category": "other",
       "isCore": false,
       "sizeMB": 4,
-      "screenshotURL": "/screenshots/smart-home.png"
+      "screenshotURL": "/screenshots/smart-home.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "fitness",
@@ -647,7 +674,8 @@
       "category": "health",
       "isCore": false,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/fitness.png"
+      "screenshotURL": "/screenshots/fitness.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     },
     {
       "id": "novi-modules",
@@ -672,7 +700,8 @@
       "category": "other",
       "isCore": true,
       "sizeMB": 1,
-      "screenshotURL": "/screenshots/novi-modules.png"
+      "screenshotURL": "/screenshots/novi-modules.png",
+      "updatedAt": "2026-06-11T00:00:00.000Z"
     }
   ]
 }
