@@ -405,7 +405,9 @@
       "description": "Architecture is voor technisch overzicht en bewijs: welke onderdelen bestaan, welke route gebruikt data en waar liggen risico's. De module heeft een FeatureArchitecture-target, maar de huidige bootstrap registreert de catalogusdescriptor via de module-index.\n\nDe belangrijkste schermen zijn blueprint, module-inventaris, evidence en architectuurdetails. De metadata linkt naar orchestration.cockpit en security.featureRegistry omdat die bronnen de kaart voeden.",
       "authorName": "Manyvere",
       "version": "1.0.0",
-      "permissions": [],
+      "permissions": [
+        "architecture.read"
+      ],
       "category": "governance",
       "isCore": false,
       "sizeMB": 1,
