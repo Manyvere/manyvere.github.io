@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Novi taken module screenshot">
+  <rect width="1200" height="750" fill="#F7F5EF"/>
+  <rect x="70" y="70" width="1060" height="610" rx="18" fill="#FFFDF8" stroke="#D8D0C3" stroke-width="2"/>
+  <rect x="124" y="128" width="252" height="34" rx="8" fill="#2F302C"/>
+  <rect x="124" y="202" width="860" height="76" rx="12" fill="#DCE5D5"/>
+  <rect x="124" y="304" width="860" height="76" rx="12" fill="#FFFDF8" stroke="#D8D0C3"/>
+  <rect x="124" y="406" width="860" height="76" rx="12" fill="#FFFDF8" stroke="#D8D0C3"/>
+  <rect x="124" y="508" width="860" height="76" rx="12" fill="#EAD4C5"/>
+  <circle cx="172" cy="240" r="16" fill="#56644E"/>
+  <circle cx="172" cy="342" r="16" fill="none" stroke="#56644E" stroke-width="4"/>
+  <circle cx="172" cy="444" r="16" fill="none" stroke="#A7663F" stroke-width="4"/>
+  <circle cx="172" cy="546" r="16" fill="#A7663F"/>
+  <rect x="220" y="226" width="320" height="14" rx="7" fill="#2F302C"/>
+  <rect x="220" y="254" width="220" height="10" rx="5" fill="#6E7168"/>
+  <rect x="220" y="328" width="360" height="14" rx="7" fill="#2F302C"/>
+  <rect x="220" y="430" width="300" height="14" rx="7" fill="#2F302C"/>
+  <rect x="220" y="532" width="340" height="14" rx="7" fill="#2F302C"/>
+</svg>

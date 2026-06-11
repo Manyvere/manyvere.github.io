@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Manyvere">
+  <rect width="64" height="64" rx="14" fill="#FFFDF8"/>
+  <rect x="8" y="8" width="48" height="48" rx="10" fill="#F7F5EF" stroke="#D8D0C3" stroke-width="2"/>
+  <rect x="17" y="17" width="8" height="8" rx="2" fill="#56644E"/>
+  <rect x="28" y="17" width="8" height="8" rx="2" fill="#A7663F"/>
+  <rect x="39" y="17" width="8" height="8" rx="2" fill="#56644E"/>
+  <rect x="17" y="28" width="8" height="8" rx="2" fill="#A7663F"/>
+  <rect x="28" y="28" width="8" height="8" rx="2" fill="#56644E"/>
+  <rect x="39" y="28" width="8" height="8" rx="2" fill="#A7663F"/>
+  <rect x="17" y="39" width="8" height="8" rx="2" fill="#56644E"/>
+  <rect x="28" y="39" width="8" height="8" rx="2" fill="#56644E"/>
+  <circle cx="43" cy="43" r="4" fill="#2F302C"/>
+</svg>
