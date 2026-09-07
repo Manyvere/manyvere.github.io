@@ -4,115 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Log in — Lineage by Manyvere</title>
-<meta name="theme-color" content="#102218">
-<link rel="icon" type="image/svg+xml" href="/assets/Lineage_logo_mark_gold.svg">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Inter:wght@400;500;600&amp;display=swap">
-<style>
-:root{
-  --wordmark-w:clamp(238px, 41vw, 300px);
-  --mark-w:calc(var(--wordmark-w) * 0.3414);
-  --line-w:calc(var(--wordmark-w) * 1.1046);
-  --by-w:calc(var(--wordmark-w) * 0.3535);
-  --gap-mark:calc(var(--wordmark-w) * -0.0756);
-  --gap-line:calc(var(--wordmark-w) * -0.1892);
-  --gap-by:calc(var(--wordmark-w) * -0.0788);
-  --mark-shift:calc(var(--wordmark-w) * -0.0172);
-}
-*,*::before,*::after{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
-  -webkit-font-smoothing:antialiased;
-  color:#102218;
-  background:#102218 url("/assets/Lineage_background_marble.jpg") center/cover no-repeat;
-}
-a{color:#2E5732}
-a:hover{color:#274B2B}
-.stage{
-  min-height:100svh;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:28px;padding:40px;
-}
-.lockup{
-  display:flex; flex-direction:column; align-items:center;
-  width:min(100%, 900px);
-}
-
-/* object-fit:contain + intrinsic aspect ratio: never stretched or squashed.
-   No width here on purpose — a shared `.lockup img` width rule would outrank
-   the per-element `.mark` / `.wordmark` classes below and flatten the lock-up. */
-.lockup img{display:block; height:auto; object-fit:contain; max-width:100%}
-
-.mark{width:var(--mark-w); margin-bottom:var(--gap-mark); transform:translateX(var(--mark-shift))}
-.wordmark{width:var(--wordmark-w)}
-.signature{width:var(--line-w); margin-top:var(--gap-line)}
-.by{width:var(--by-w); margin-top:var(--gap-by)}
-
-.card{
-  width:100%;max-width:420px;
-  display:flex;flex-direction:column;gap:18px;
-  padding:32px 40px;background:#FFFFFF;
-  border:1px solid rgba(16,34,24,.12);border-radius:12px;
-  box-shadow:0 12px 32px rgba(0,0,0,.35);
-}
-h1{
-  margin:0 0 4px;font-family:'Libre Caslon Display',Georgia,serif;
-  font-weight:700;font-size:24px;line-height:1.25;color:#102218;text-align:center;
-}
-.field{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600}
-.field input{
-  width:100%;min-width:0;height:46px;border:1px solid rgba(16,34,24,.22);
-  border-radius:6px;padding:12px;font:400 15px Inter,system-ui,sans-serif;
-  background:#FFFFFF;color:#102218;
-}
-input::placeholder{color:#8A958C}
-.remember{display:flex;align-items:center;gap:10px;min-height:44px;font-size:14px;cursor:pointer}
-.remember input{width:18px;height:18px;margin:0;accent-color:#2E5732}
-.btn-primary{
-  display:flex;align-items:center;justify-content:center;height:48px;
-  border:0;border-radius:6px;background:#2E5732;color:#FDF7EE;
-  font:600 15px Inter,system-ui,sans-serif;text-decoration:none;
-}
-.btn-primary:hover{background:#274B2B;color:#FDF7EE}
-.forgot{
-  align-self:center;display:inline-flex;align-items:center;min-height:44px;
-  padding:0 12px;font-size:14px;color:#2E5732;text-decoration:none;
-}
-.divider{display:flex;align-items:center;gap:12px;color:#5A6B5C;font-size:13px}
-.divider span{flex:1;height:1px;background:rgba(16,34,24,.12)}
-.btn-secondary{
-  height:48px;display:flex;align-items:center;justify-content:center;gap:12px;
-  border:1px solid rgba(16,34,24,.22);border-radius:6px;background:#FFFFFF;color:#102218;
-  font:500 15px Inter,system-ui,sans-serif;opacity:.6;
-}
-.btn-secondary svg{flex-shrink:0}
-:focus-visible{outline:2px solid #2E5732;outline-offset:3px}
-@media(max-width:520px){
-  .stage{gap:20px;padding:24px 16px}
-  .card{padding:24px}
-}
-</style>
+<meta http-equiv="refresh" content="0; url=/lineage/login">
 </head>
 <body>
-<main class="stage">
-  <div class="lockup" role="img" aria-label="Lineage by Manyvere">
-    <img class="mark" src="/assets/Lineage_logo_mark_gold.svg" alt="">
-    <img class="wordmark" src="/assets/Lineage_wordmark_cream.svg" alt="Lineage">
-    <img class="signature" src="/assets/Lineage_signature_line_gold.png" alt="">
-    <img class="by" src="/assets/Lineage_by_manyvere_gold.svg" alt="by Manyvere">
-  </div>
-  <!-- Static preview: no submit control or named fields. The two text-entry
-       fields block implicit submission; sign-in is a plain link to the app. -->
-  <form class="card" aria-labelledby="login-heading">
-    <h1 id="login-heading">Login to your Lineage account</h1>
-    <label class="field">User ID<input type="text" placeholder="User ID*" autocomplete="username"></label>
-    <label class="field">Password<input type="password" placeholder="Password*" autocomplete="current-password"></label>
-    <label class="remember"><input type="checkbox">Remember me</label>
-    <a class="btn-primary" href="https://app.manyvere.com/login">Log in</a>
-    <a class="forgot" href="#" aria-disabled="true">Forgot your User ID/Password?</a>
-    <div class="divider"><span></span>or<span></span></div>
-    <button class="btn-secondary" type="button" aria-disabled="true" title="Coming soon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="0" y="0" width="9" height="9" fill="#F25022"></rect><rect x="11" y="0" width="9" height="9" fill="#7FBA00"></rect><rect x="0" y="11" width="9" height="9" fill="#00A4EF"></rect><rect x="11" y="11" width="9" height="9" fill="#FFB900"></rect></svg>Sign in with Microsoft</button>
-  </form>
+<main>
+<p><a href="/lineage/login">Continue to Lineage log in</a></p>
 </main>
 </body>
 </html>
