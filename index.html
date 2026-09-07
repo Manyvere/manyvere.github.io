@@ -115,7 +115,7 @@ body{
 .stage{display:flex;flex-direction:column;justify-content:center;gap:42px;padding:40px 24px;min-height:100svh}
 :root{--wordmark-w:clamp(238px,32vw,490px)}
 /* Matte green / bronze drift; no bevel or specular highlight. */
-.login{min-width:132px;min-height:46px;padding:12px 28px;border:1px solid #777b50;border-radius:4px;background:linear-gradient(115deg,#193f32 0%,#35523b 28%,#665831 52%,#324c38 75%,#193f32 100%);background-size:300% 100%;background-position:15% 50%;color:#fde5ca;font:500 15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.02em;opacity:1;box-shadow:none}
+.login{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:inherit;min-width:132px;min-height:46px;padding:12px 28px;border:1px solid #777b50;border-radius:4px;background:linear-gradient(115deg,#193f32 0%,#35523b 28%,#665831 52%,#324c38 75%,#193f32 100%);background-size:300% 100%;background-position:15% 50%;color:#fde5ca;font:500 15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.02em;opacity:1;box-shadow:none}
 .login:disabled{cursor:not-allowed}
 .login:focus-visible{outline:2px solid #fde5ca;outline-offset:4px}
 @media(prefers-reduced-motion:no-preference){
@@ -134,7 +134,7 @@ body{
     <img class="signature" src="assets/Lineage_signature_line_gold.png" alt="">
     <img class="by"        src="assets/Lineage_by_manyvere_gold.svg"    alt="by Manyvere">
   </div>
-<button class="login" type="button" disabled title="Online sign-in is not available yet" aria-label="Log in — not yet available">Log in</button>
+<a class="login" href="/login/">Log in</a>
 </main>
 
 </body>
