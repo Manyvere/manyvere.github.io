@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 
+// The brightest centre pixel of reference-horizon.png is row 26 in its 211px height.
+const FALLBACK_APEX_RATIO = 26 / 211;
+
 // Real-time geometry is intentional: the owner requested rotating Earth, reflections
 // and independently twinkling stars. The rocky albedo matches the selected mock.
 export function SpaceScene({ paused, result, onInteract }) {
@@ -8,8 +11,47 @@ export function SpaceScene({ paused, result, onInteract }) {
   const dragSurface = useRef(null);
   const reposition = useRef(() => {});
   const controls = useRef({ paused, result, onInteract });
-  const [available, setAvailable] = useState(false);
+  // null keeps the scene dark while WebGL/textures are still being established.
+  const [available, setAvailable] = useState(null);
   useEffect(() => { controls.current = { paused, result, onInteract }; reposition.current(); }, [paused, result, onInteract]);
+
+  useEffect(() => {
+    if (available !== false) return undefined;
+    const element = host.current;
+    if (!element) return undefined;
+
+    const positionFallback = () => {
+      const fallback = element.querySelector('.space-fallback');
+      if (!fallback) return;
+      const scrollY = window.scrollY;
+      const hero = document.querySelector('.result-hero');
+      const anchor = hero
+        ? hero.querySelector('.calculation-jump') || hero.querySelector('.result-note')
+        : document.querySelector('.calculator-nav, .result-note');
+      const heroTop = hero ? hero.getBoundingClientRect().top + scrollY : 0;
+      const anchorBottom = anchor ? anchor.getBoundingClientRect().bottom + scrollY : 0;
+      const horizonDocument = Math.max(
+        heroTop + element.clientHeight * .833,
+        anchorBottom ? anchorBottom + 56 : 0,
+      );
+      const horizon = horizonDocument - scrollY;
+      fallback.style.bottom = 'auto';
+      fallback.style.top = `${horizon - fallback.clientHeight * FALLBACK_APEX_RATIO}px`;
+      fallback.style.transform = 'translateX(-50%)';
+      element.dataset.horizon = horizon.toFixed(2);
+      element.dataset.horizonDocument = horizonDocument.toFixed(2);
+      element.dataset.scrollY = scrollY.toFixed(2);
+    };
+
+    const schedule = () => requestAnimationFrame(positionFallback);
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    schedule();
+    return () => {
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
+    };
+  }, [available]);
 
   useEffect(() => {
     const element = host.current;
@@ -31,12 +73,12 @@ export function SpaceScene({ paused, result, onInteract }) {
     let lastPointerY = 0;
     let lastPointerTime = 0;
     const hitArea = dragSurface.current;
-    const fallback = element.querySelector('.space-fallback');
     let texturesReady = false;
     let renderer;
     try {
       renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'low-power' });
     } catch {
+      setAvailable(false);
       return;
     }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
@@ -203,7 +245,12 @@ export function SpaceScene({ paused, result, onInteract }) {
       hitArea.style.clipPath = `circle(${radius}px at 50% ${horizon + radius}px)`;
       planet.position.y = -height / 2 - radius + visibleHeight;
       hazeMaterial.uniforms.uCenter.value.set(width / 2, visibleHeight - radius);
-      if (fallback) fallback.style.transform = `translateX(-50%) translateY(${-scrollY}px)`;
+      const fallback = element.querySelector('.space-fallback');
+      if (fallback) {
+        fallback.style.bottom = 'auto';
+        fallback.style.top = `${horizon - fallback.clientHeight * FALLBACK_APEX_RATIO}px`;
+        fallback.style.transform = 'translateX(-50%)';
+      }
       element.dataset.horizon = horizon.toFixed(2);
       element.dataset.horizonDocument = horizonDocument.toFixed(2);
       element.dataset.scrollY = scrollY.toFixed(2);
@@ -390,6 +437,6 @@ export function SpaceScene({ paused, result, onInteract }) {
   }, []);
 
   return <><div className={`space-scene ${available ? 'is-ready' : ''}`} ref={host} aria-hidden="true" data-testid="space-scene">
-    <img className="space-fallback" src="/lineage/images/reference-horizon.png" alt="" />
+    {available === false && <img className="space-fallback" src="/lineage/images/reference-horizon.png" alt="" />}
   </div><button className="planet-control" ref={dragSurface} type="button" disabled={!available} aria-label="Rotate planet with the pointer or arrow keys" data-testid="planet-control" /></>;
 }
