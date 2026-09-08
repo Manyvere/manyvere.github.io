@@ -1,0 +1,205 @@
+/* The result and its explanation share one continuous, scrollable page. */
+.result-stage { max-width: none; padding: 0; z-index: auto; }
+.result-hero { position: relative; z-index: 1; max-width: 660px; min-height: max(820px, 100svh); margin: 0 auto; padding: 148px 28px 172px; }
+.calculation-jump { display: inline-flex; align-items: center; gap: 17px; margin-top: 30px; padding: 14px 18px; color: #e5dcc9; font-size: 14px; }
+.calculation-jump svg { transition: transform .25s ease; color: #ddbd84; }
+.calculation-jump:hover { color: #f7e7c7; }
+.calculation-jump:hover svg { transform: translateY(4px); }
+.result-hero .result-note { font-size: 11px; color: #9fa18f; margin-top: 7px; }
+.calculation-section { position: relative; z-index: 3; isolation: isolate; text-align: left; padding: 72px 40px 40px; scroll-margin-top: 24px; }
+.calculation-section::before { content: ''; position: absolute; pointer-events: none; z-index: -1; inset: -160px 0 0; background: linear-gradient(180deg, #04070600 0, #04070608 60px, #04070624 140px, #04070659 220px, #040706a6 320px, #040706e8 440px, #040706 580px); }
+.calculation-inner { max-width: 1000px; margin-inline: auto; }
+.calculation-heading { margin-bottom: 56px; }
+.calculation-heading .eyebrow { font-size: 10px; letter-spacing: .2em; color: #d6bc8b; }
+.calculation-heading h2 { font-size: clamp(32px, 4vw, 49px); line-height: 1.18; letter-spacing: -.048em; font-weight: 400; margin: 18px 0 14px; outline: none; }
+.calculation-heading p { font-size: 15px; color: #a9ada0; line-height: 1.6; margin: 0; }
+.calculation-chapter { display: flex; align-items: baseline; gap: 14px; font-weight: 400; font-size: 16px; margin: 0; color: #e8e3d7; }
+.calculation-chapter > span { color: #c7ad7b; font-size: 11px; font-variant-numeric: tabular-nums; }
+.annual-workload { padding: 25px 0 36px; border-top: 1px solid #bba57a4d; border-bottom: 1px solid #bba57a2b; }
+.workload-equation { display: grid; grid-template-columns: 1fr 36px 1fr 36px 1.25fr; align-items: center; gap: 26px; margin-top: 28px; }
+.workload-equation > div { display: flex; flex-direction: column; gap: 9px; min-width: 0; }
+.workload-equation strong { font-weight: 400; font-size: clamp(36px, 4.4vw, 54px); letter-spacing: -.055em; line-height: 1.15; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.workload-equation div > span { color: #aeb2a5; font-size: 12px; line-height: 1.5; }
+.workload-equation .equation-symbol { font-size: 26px; font-weight: 400; color: #807d6e; padding-bottom: 20px; }
+.workload-equation .equation-total strong { color: #e2c38b; }
+.calculation-columns { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 72px; margin-top: 50px; align-items: start; }
+.calculation-explanation { min-width: 0; }
+.time-equation { display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px; margin-top: 29px; }
+.time-equation > strong { font-size: clamp(35px, 4vw, 49px); letter-spacing: -.045em; font-weight: 400; color: #e6c892; font-variant-numeric: tabular-nums; }
+.time-equation strong > span { font-size: 22px; color: #c3b087; }
+.time-equation > span { color: #c6c8ba; font-size: 13px; }
+.calculation-formula { color: #aeb7a5; font-size: 13px; line-height: 1.75; margin: 9px 0 30px; }
+.annual-time-label { display: flex; justify-content: space-between; gap: 16px; color: #b7bcac; font-size: 12px; line-height: 1.5; }
+.annual-time-label > span:last-child { color: #8c9585; white-space: nowrap; }
+.annual-time-bar { display: flex; gap: 3px; height: 32px; margin-top: 13px; border-radius: 3px; overflow: hidden; }
+.annual-time-bar > span { min-width: 0; }
+.time-retained { background: #586151; }
+.time-recovered { background: repeating-linear-gradient(120deg, #e0c58e 0 1px, #caae79 1px 6px); }
+.time-legend { display: flex; justify-content: space-between; gap: 15px; margin-top: 13px; color: #b4bca9; font-size: 12px; line-height: 1.5; }
+.time-legend > span { display: flex; align-items: baseline; gap: 7px; }
+.time-legend i { width: 6px; height: 6px; flex-shrink: 0; border-radius: 1px; background: #6e7865; }
+.time-legend > span:last-child { color: #d7bf8e; }
+.time-legend > span:last-child i { background: #d8be87; }
+.workflow-detail { margin-top: 30px; border-block: 1px solid #bba57a24; padding: 0; }
+.workflow-detail summary { min-height: 51px; color: #d6d4c5; font-size: 13px; }
+.workflow-detail summary svg { color: #ab9979; }
+.workflow-detail p { color: #9ba693; font-size: 12px; line-height: 1.75; margin: 6px 0 20px; }
+.workflow-detail table { margin-block: 12px 22px; }
+.workflow-detail caption { font-size: 10px; line-height: 1.5; }
+.workflow-detail th { padding-right: 12px; }
+.workflow-detail tfoot { color: #e8d6b2; }
+.workflow-detail tfoot th,.workflow-detail tfoot td { border-bottom: none; padding-top: 15px; }
+.value-derivation { margin-top: 43px; }
+.value-ledger { margin: 22px 0 0; }
+.value-ledger > div { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding-block: 15px; }
+.value-ledger dt { font-size: 14px; color: #d8dbcd; line-height: 1.6; }
+.value-ledger dt small { display: block; margin-top: 3px; font-size: 12px; color: #a4b099; }
+.value-ledger dd { margin: 0; text-align: right; color: #e1e1d3; font-size: 19px; letter-spacing: -.025em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.value-ledger .ledger-total { border-top: 1px solid #bba57a59; margin-top: 13px; padding-top: 25px; flex-wrap: wrap; gap: 12px; }
+.ledger-total dt { color: #e8d7b6; }
+.ledger-total dd { color: #e6c58c; font-size: clamp(29px, 3.4vw, 40px); line-height: 1.2; }
+.ledger-total.is-negative dd { color: #e0b99a; }
+.break-even-note { color: #99a28e; font-size: 11px; line-height: 1.8; margin-top: 18px; max-width: 420px; }
+.break-even-note strong { color: #c3c8b8; font-weight: 400; }
+.assumptions-panel { padding: 27px 25px 19px; border: 1px solid #bba57a2c; border-radius: 12px; background: linear-gradient(150deg, #182018a6, #0b100cc4); box-shadow: 0 12px 50px #0000001a; }
+.assumptions-panel .eyebrow { font-size: 9px; letter-spacing: .17em; }
+.assumptions-panel h3 { margin: 13px 0 10px; font-size: 23px; font-weight: 400; letter-spacing: -.04em; }
+.assumptions-panel > p { font-size: 13px; line-height: 1.7; color: #b2bba8; margin: 0; }
+.assumptions-panel fieldset { margin-top: 25px; padding-top: 15px; border-color: #bba57a25; }
+.assumptions-panel legend { color: #dedfd1; font-size: 12px; }
+.assumptions-panel .field-note { font-size: 11px; color: #aab59e; line-height: 1.6; margin-bottom: 13px; }
+.assumption-rates { display: grid; gap: 9px; }
+.assumption-rates label,.assumptions-panel .assumption-row { display: grid; grid-template-columns: minmax(0, 1fr) 109px; gap: 12px; align-items: center; color: #cbd4c0; font-size: 13px; }
+.assumptions-panel .assumption-row + .assumption-row { margin-top: 9px; }
+.assumptions-panel .currency-field { margin: 0; padding: 8px 10px; border-color: #8c927846; border-radius: 5px; background: #070c08a6; }
+.assumptions-panel .currency-field:focus-within { border-color: #dfbd82; box-shadow: 0 0 0 2px #dfbd8212; }
+.assumptions-panel .currency-field input { font-size: 14px; text-align: right; outline: none; padding: 0; height: 23px; }
+.assumptions-panel .currency-field > span { font-size: 11px; }
+.assumptions-panel .apply-assumptions { margin-top: 27px; width: 100%; font-size: 12px; min-height: 44px; padding: 11px; gap: 15px; }
+.reset-assumptions { width: 100%; justify-content: center; color: #a8ad97; font-size: 10px; padding: 14px 0 2px; }
+.calculation-footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #bba57a28; }
+.calculation-footer > p { max-width: 760px; color: #97a28e; font-size: 11px; line-height: 1.9; margin: 0; }
+.calculation-footer > div { display: flex; justify-content: space-between; align-items: center; gap: 28px; margin-top: 25px; }
+.calculation-footer > div > span { color: #737f6a; font-size: 10px; line-height: 1.8; }
+.calculation-footer a { display: inline-flex; align-items: center; gap: 12px; color: #d5c29d; font-size: 12px; white-space: nowrap; padding-block: 12px; }
+@media (min-width: 701px) and (max-height: 900px) {
+  .result-hero { padding-top: 124px; min-height: max(800px, 100svh); }
+}
+@media (max-width: 950px) {
+  .calculation-columns { grid-template-columns: minmax(0, 1fr) 300px; gap: 35px; }
+  .assumptions-panel { padding-inline: 20px; }
+  .workload-equation { gap: 16px; }
+}
+@media (max-width: 700px) {
+  .result-hero { padding: 135px 24px 135px; min-height: max(830px, 100svh); }
+  .calculation-jump { font-size: 13px; margin-top: 25px; }
+  .calculation-section { padding: 46px 24px 28px; scroll-margin-top: 0; }
+  .calculation-heading { margin-bottom: 35px; }
+  .calculation-heading h2 { font-size: 33px; max-width: 310px; margin-top: 15px; }
+  .calculation-heading p { font-size: 12px; max-width: 285px; }
+  .calculation-chapter { font-size: 13px; gap: 12px; }
+  .annual-workload { padding-top: 21px; padding-bottom: 27px; }
+  .workload-equation { grid-template-columns: 1fr 12px 1fr 12px 1.1fr; gap: 8px; margin-top: 24px; }
+  .workload-equation strong { font-size: clamp(25px, 7.4vw, 40px); }
+  .workload-equation .equation-symbol { font-size: 18px; }
+  .workload-equation div > span { font-size: 10px; min-height: 30px; }
+  .calculation-columns { grid-template-columns: minmax(0, 1fr); gap: 38px; margin-top: 33px; }
+  .time-equation { gap: 10px; margin-top: 23px; }
+  .time-equation > strong { font-size: 37px; }
+  .time-equation > span { font-size: 12px; }
+  .calculation-formula { font-size: 12px; }
+  .time-legend { gap: 10px; font-size: 11px; }
+  .value-ledger > div { gap: 13px; }
+  .value-ledger dt { font-size: 13px; }
+  .value-ledger dt small { font-size: 11px; }
+  .value-ledger dd { font-size: 18px; }
+  .value-ledger .ledger-total dd { font-size: 31px; }
+  .assumptions-panel { padding: 26px 22px 18px; }
+  .assumption-rates label,.assumptions-panel .assumption-row { grid-template-columns: minmax(0, 1fr) 125px; }
+  .calculation-footer { margin-top: 37px; }
+  .calculation-footer > div { align-items: start; flex-direction: column; gap: 8px; }
+}
+
+/* Refined calculation: the explanation leads; valid assumptions update in place. */
+.calculation-refined .calculation-inner { max-width: 1080px; }
+.calculation-refined .calculation-heading { margin-bottom: 38px; }
+.calculation-refined .annual-workload { display: grid; grid-template-columns: 185px minmax(0,1fr); align-items: center; gap: 35px; padding-block: 24px; }
+.calculation-refined .workload-equation { margin: 0; gap: 16px; grid-template-columns: 1fr 20px 1fr 20px 1.15fr; }
+.calculation-refined .workload-equation strong { font-size: clamp(29px,3.2vw,40px); }
+.calculation-refined .workload-equation .equation-symbol { font-size: 23px; }
+.calculation-refined .calculation-columns { grid-template-columns: minmax(0,1fr) 305px; gap: 64px; margin-top: 40px; }
+.calculation-refined .time-equation { margin-top: 24px; }
+.calculation-refined .time-equation > strong { font-size: clamp(39px,4.4vw,54px); }
+.calculation-refined .time-equation > span { font-size: 14px; }
+.time-equation .approximate { font-size: .56em; margin-right: .14em; vertical-align: .12em; color: #b9a274; }
+.annual-time-summary { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 15px; margin: 23px 0 13px; }
+.annual-time-summary > div { display: flex; align-items: baseline; gap: 10px; color: #ebe8dc; font-size: 23px; font-variant-numeric: tabular-nums; }
+.annual-time-summary > div > svg { color: #939a85; align-self: center; }
+.annual-time-summary small { font-size: 12px; color: #a6b19b; }
+.reduction-label { display: inline-block; font-size: 12px; color: #dcc798; }
+.calculation-refined .annual-time-bar { height: 25px; margin-top: 0; }
+.calculation-refined .time-legend { font-size: 12px; }
+.calculation-refined .workflow-detail { margin-top: 24px; }
+.calculation-refined .workflow-detail summary { min-height: 46px; font-size: 14px; }
+.calculation-refined .workflow-detail p { font-size: 13px; }
+.calculation-refined .value-derivation { margin-top: 34px; }
+.role-detail { margin-top: 22px; padding: 0 0 11px; border-bottom: 1px solid #bba57a28; }
+.role-detail summary { min-height: 42px; color: #d4d8c9; font-size: 14px; }
+.role-detail summary svg { color: #ac9b78; }
+.role-breakdown { list-style: none; margin: 7px 0 0; padding: 0; }
+.role-breakdown li { display: grid; grid-template-columns: minmax(74px,.8fr) minmax(0,1.4fr) minmax(65px,.7fr); gap: 14px; align-items: baseline; padding: 10px 0; font-size: 13px; }
+.role-breakdown .role-name { color: #c0cbb6; }
+.role-breakdown .role-equation { color: #aebaa0; font-variant-numeric: tabular-nums; text-align: right; }
+.role-breakdown strong { font-size: 15px; font-weight: 400; font-variant-numeric: tabular-nums; text-align: right; color: #e3dfcf; }
+.role-rounding-note { font-size: 11px; color: #909e83; line-height: 1.6; margin: 7px 0 0; }
+.calculation-refined .value-ledger { margin-top: 10px; }
+.calculation-refined .value-ledger > div { padding-block: 13px; }
+.calculation-refined .value-ledger dt { font-size: 15px; }
+.calculation-refined .value-ledger dt small { font-size: 12px; }
+.calculation-refined .value-ledger .ledger-total { padding-block: 24px 4px; }
+.calculation-refined .ledger-total dd { font-size: clamp(35px,4.2vw,49px); }
+.calculation-refined .break-even-note { font-size: 12px; max-width: 480px; }
+.calculation-refined .assumptions-panel { padding: 22px 20px 13px; background: #101710a6; border-color: #bba57a20; box-shadow: none; }
+.calculation-refined .assumptions-panel h3 { font-size: 22px; margin: 0 0 9px; }
+.live-estimate-note { display: flex; align-items: baseline; gap: 7px; font-size: 12px; line-height: 1.6; color: #b7c4a6; }
+.live-estimate-note svg { align-self: center; flex-shrink: 0; color: #b8c497; }
+.calculation-refined .assumptions-panel fieldset { margin-top: 20px; padding-top: 12px; }
+.calculation-refined .assumptions-panel legend { font-size: 13px; }
+.calculation-refined .assumptions-panel .field-note { font-size: 12px; line-height: 1.6; margin-bottom: 11px; }
+.calculation-refined .assumption-rates { gap: 7px; }
+.calculation-refined .assumption-rates label,.calculation-refined .assumption-row { grid-template-columns: minmax(0,1fr) 98px; gap: 10px; font-size: 13px; }
+.calculation-refined .assumptions-panel .currency-field { padding: 7px 9px; }
+.calculation-refined .assumptions-panel input { font-size: 15px; }
+.calculation-refined .assumptions-panel input[aria-invalid=true] { color: #efbb9d; }
+.assumption-reduction { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin: 12px 0 0; padding-top: 12px; border-top: 1px solid #bba57a19; color: #b5c2a6; font-size: 12px; }
+.assumption-reduction strong { color: #e0c68e; font-size: 19px; font-weight: 400; white-space: nowrap; }
+.assumptions-feedback { min-height: 0; margin: 14px 0 0; font-size: 12px; line-height: 1.65; color: #edbc9d; }
+.estimate-pending { margin: 16px 0 0; color: #edbc9d; font-size: 12px; line-height: 1.6; }
+.calculation-refined .reset-assumptions { font-size: 11px; padding-top: 19px; }
+@media(max-width:950px) {
+  .calculation-refined .annual-workload { grid-template-columns: 165px minmax(0,1fr); gap: 20px; }
+  .calculation-refined .calculation-columns { grid-template-columns: minmax(0,1fr) 285px; gap: 32px; }
+  .calculation-refined .role-breakdown li { gap: 8px; font-size: 12px; }
+}
+@media(max-width:700px) {
+  .calculation-refined .calculation-heading { margin-bottom: 28px; }
+  .calculation-refined .annual-workload { grid-template-columns: minmax(0,1fr); gap: 20px; padding-block: 20px; }
+  .calculation-refined .workload-equation { gap: 8px; grid-template-columns: 1fr 12px 1fr 12px 1.15fr; }
+  .calculation-refined .workload-equation strong { font-size: clamp(25px,7.4vw,36px); }
+  .calculation-refined .workload-equation div > span { font-size: 11px; }
+  .calculation-refined .calculation-columns { grid-template-columns: minmax(0,1fr); margin-top: 29px; gap: 32px; }
+  .calculation-refined .calculation-chapter { font-size: 15px; }
+  .calculation-refined .time-equation > strong { font-size: 43px; }
+  .calculation-refined .time-equation > span { font-size: 13px; }
+  .annual-time-summary { gap: 8px; }
+  .annual-time-summary > div { font-size: 20px; }
+  .annual-time-summary small { font-size: 11px; }
+  .calculation-refined .time-legend { font-size: 11px; }
+  .calculation-refined .value-ledger dt { font-size: 14px; }
+  .calculation-refined .value-ledger dt small { font-size: 11px; }
+  .calculation-refined .ledger-total dd { font-size: 38px; }
+  .calculation-refined .role-breakdown li { grid-template-columns: minmax(66px,.8fr) minmax(0,1.4fr) minmax(62px,.7fr); font-size: 12px; gap: 8px; }
+  .role-breakdown strong { font-size: 14px; }
+  .calculation-refined .assumptions-panel { padding: 23px 22px 14px; }
+  .calculation-refined .assumption-rates label,.calculation-refined .assumption-row { grid-template-columns: minmax(0,1fr) 120px; }
+}

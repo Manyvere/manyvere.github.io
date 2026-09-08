@@ -1,0 +1,114 @@
+{
+  "source": "/Users/remy/Manyvere/lineage-savings-experience-0907",
+  "baseCommit": "c2a8111cf0154140722e8070c5a53859a6d8d076",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "dbcdbe331e420f34c55dde433bd52992f8e9c7c99f66581a06f48530201d9e97"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a68feeb715502864ae74b13fe8ce7f2c2aba2d4ff9bba2b555f1a4317523af53"
+    },
+    {
+      "path": "docs/cfo-review.md",
+      "sha256": "d8de2dec83ee1a011bf60302de1e418979b3a49b37a596ef94b23344993db6a9"
+    },
+    {
+      "path": "docs/design-qa.md",
+      "sha256": "ea3f8a1144bb4e1c8c60760957df2b2a9f01b4d87ce7a938ff13a200c56e0b74"
+    },
+    {
+      "path": "index.html",
+      "sha256": "42e238193902f38c2d2cf564569421bd91101974d6f78eedac8914247d413bba"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "97a2685f690c8af92e8a2bd8216e8053035fe611e93921e0af9fdb5b79a42e6e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "8e2d5d7baa925dc9579c7497951d2b29e83daf55fb4b919b6c722eca69cdb2e5"
+    },
+    {
+      "path": "public/brand/favicon.svg",
+      "sha256": "3400ae6880216bfd8793fdfde3f5d6089bc646bc4ae19083552797e569a2a9f6"
+    },
+    {
+      "path": "public/brand/mark.svg",
+      "sha256": "5c67e93462fa8af2ee86344f2c1b6c24682e300e919db9d9cd90e0495340f197"
+    },
+    {
+      "path": "public/brand/wordmark.svg",
+      "sha256": "193d54c1ed962d2f10a0721d054cf7156cbe91b1e5dab4d1420314b5c959fd0e"
+    },
+    {
+      "path": "public/images/earth-day.jpg",
+      "sha256": "2faa400d1eade3bc44caf6750d1b772bd9bbb6d87362c02bc7c3304e78fa0a9d"
+    },
+    {
+      "path": "public/images/earth-normal.jpg",
+      "sha256": "3fc43e9639c34e8223c4a871e3bdf5b2d52ee79f7e89ce3f28cba45d4cac031a"
+    },
+    {
+      "path": "public/images/earth-specular.jpg",
+      "sha256": "2df48906732d7a458b2d0a7cdec51a829262307c6bdee4cfdf079a4dd7c71c69"
+    },
+    {
+      "path": "public/images/horizon.png",
+      "sha256": "3f81e8e7ccf107f191a8216cd06fc106c80d287dd6e804a6531cd26d15e35f60"
+    },
+    {
+      "path": "public/images/reference-horizon.png",
+      "sha256": "cd3ec6b2b6c0dd5be55718a7414c76837ae1ee84f033111922c373d47af58cd2"
+    },
+    {
+      "path": "public/images/rock-albedo.jpg",
+      "sha256": "9e710b3194b57e172fc227ee440fc93de492996b6a120e8c94ed6d88a6743873"
+    },
+    {
+      "path": "public/images/rock-albedo.png",
+      "sha256": "29224e1f4e9f1c3557255a9e7d3cdb7b1de5cd1e40062d56388c53b6de1b379a"
+    },
+    {
+      "path": "src/App.jsx",
+      "sha256": "7e9f5f64c93b095ff2fecab7cd36ab9ae614da9386f65af7ad2f5bf0e74fdc8b"
+    },
+    {
+      "path": "src/Calculation.jsx",
+      "sha256": "7ec3770613f4ad0639c450777c160e9588daec286ab2775c150a9d033098c1be"
+    },
+    {
+      "path": "src/SpaceScene.jsx",
+      "sha256": "4725155ac3e814b56b315d25d7ddbf02d4224dc6bed73672043a393175dabf58"
+    },
+    {
+      "path": "src/calculation.css",
+      "sha256": "f8f664c81709ec0d9a0ea5f0d1b726aece9473ffc036d4be9bd9d6ea34cf90a4"
+    },
+    {
+      "path": "src/main.jsx",
+      "sha256": "349ad0e486c451925ab7dfbdfdd942849e56a540b542de6c4d9cbee0f290f57f"
+    },
+    {
+      "path": "src/model.js",
+      "sha256": "6f21ab94a0eeecfe68b8e1d9f1f3efdc30665ffe734c75b41fdffe8fa7637a74"
+    },
+    {
+      "path": "src/slider.js",
+      "sha256": "77c5dd532650d15ab094d981e6c48657d99c39bd65df80bd2ae13950a6a9068e"
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "27fedea320c130edc83837ffe697f7a8dbefeda4490884291e2cb753895cfb43"
+    },
+    {
+      "path": "tests/model.test.mjs",
+      "sha256": "c00e7b70d99f2487d7181d8c67fa348c8933e5c0e463c5b93380493be3f10d4a"
+    },
+    {
+      "path": "tests/slider.test.mjs",
+      "sha256": "b8f2bf16fb38970d1321762325c999824d37d0a9b9eec89233086ff1a0310705"
+    }
+  ]
+}
