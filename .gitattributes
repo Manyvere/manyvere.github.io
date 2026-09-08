@@ -1,0 +1,5 @@
+# Preserve official SVG bytes, including whitespace-only lines in the released masters.
+_savings/public/brand/*.svg whitespace=-trailing-space
+lineage/brand/*.svg whitespace=-trailing-space
+# Vite embeds upstream Three.js GLSL template strings verbatim in generated JS.
+lineage/assets/*.js whitespace=-trailing-space,-space-before-tab

@@ -1,0 +1,18 @@
+# Local candidate verification — 8 September 2026
+
+The integrated, built artifact was served from this worktree at `http://127.0.0.1:6208/lineage/` in a separate Chrome QA tab. No original prototype tab, user values, live auth or host configuration was used or changed.
+
+- Clean `npm ci` and production build passed; all 17 generated files reproduced identical SHA-256 hashes; 19 tests passed: all 15 original model/slider tests plus four production path/provenance/build checks. The original large-bundle warning remains.
+- HTTP verification downloaded seven generated/scene/brand resources and compared exact bytes. `/lineage?utm_source=qa` returned 301 with query retained. Five unknown asset, route, login and API paths returned 404 from the local static server. This server approximates Pages directory routing; live Pages/Cloudflare behavior remains a deployment gate.
+- Browser inputs changed to 31 companies, 4 walkthroughs, 7 hours: 124 annual walkthroughs, 548 freed hours and €8,250. Double-clicking Next advanced one question. Number display had no animation or transform.
+- Editing price to €85.50 and model reduction to 50% immediately changed both result and calculation to −€3,707 and 274 hours (approximately 32% actual time reduction). Blank Associate input via native keyboard retained the result and showed explicit invalid/last-valid feedback. Reset restored full source rates and immediately recalculated.
+- Actual browser-downloaded TXT exactly matched `estimateText` with the entered inputs, €85.50 fee and 50% factor. Unrounded net value −3706.8217142857175; saved hours 274.03999999999996. No PDF feature was added.
+- Desktop reference viewport measured 1422 × 1105 CSS pixels; horizon y=921.30, no horizontal overflow. Mobile measured 390 × 844 CSS pixels; role rows 342.01 pixels; 1,000 centered at x=195 with no overflow. Chrome's existing zoom required adjusted viewport override dimensions; temporary overrides were reset.
+- Scene rotation/sky time changed while playing and stayed identical in separated paused samples. Question navigation while paused was immediate. Scrolling changed scene horizon by the scroll delta. Source drag inertia and reduced-motion code are unchanged, but were not independently re-exercised beyond pause/scene checks in this integration.
+- Direct `/lineage/` loaded all visible images and a ready WebGL scene. Browser logs contained three message-channel listener errors; no React or WebGL shader error was observed. An early local relative root fallback attempt was blocked by Chrome with `ERR_BLOCKED_BY_CLIENT`; final production fallback uses fixed absolute www and passes executable redirect-contract testing. Its live browser outcome remains part of publication QA.
+
+Source/model/slider/calculation/styles/public assets retain original bytes. Only App navigation/brand paths, SpaceScene image paths, HTML canonical/favicon and host build configuration differ. The book mark matches `Lineage_logo_mark_gold_tight.svg`; wordmark and favicon match the official 2026-09-08 release byte-for-byte. Prototype paths and hashes are inventoried in `savings-source-manifest.json`; the original prototype was rehashed after preparation.
+
+Evidence is stored outside the public site at `/Users/remy/Manyvere/agents/orchestration/lineage/evidence/savings-production-25dac79d/`: desktop-question/result/calculation/invalid PNGs, mobile-question/calculation PNGs, browser metrics, actual-browser-download.txt and download-verification.json. These are local checks, not independent review or publication evidence.
+
+Diff whitespace attributes are narrowly scoped to canonical SVG whitespace-only lines and generated Three.js GLSL strings, preserving approved/upstream bytes; authored code keeps normal checks.
