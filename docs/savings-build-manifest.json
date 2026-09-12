@@ -1,11 +1,11 @@
 [
   {
-    "path": "lineage/assets/index-Brr0y8pQ.css",
-    "sha256": "a588bc3138940905b96af71742e5bcdb36628ddabd175ec91950a467312bf10e"
+    "path": "lineage/assets/index-CQj9ATPz.js",
+    "sha256": "d0d2c1ef0002fac0e6a48e288a47cb01dbaf4a99bfa4355a61f0e99a3cf7ae26"
   },
   {
-    "path": "lineage/assets/index-DgV6twCo.js",
-    "sha256": "928393c431f1c6f7341edd4f9f426ba3938bae3e2779dbd8c8886c299becfb5c"
+    "path": "lineage/assets/index-DVAxkK0h.css",
+    "sha256": "1ca4159e753112445e7b3cf20dd5fc5e7d5c7a5a83ae30bc5a5498420cf1bfa4"
   },
   {
     "path": "lineage/assets/inter-latin-400-normal-C38fXH4l.woff2",
@@ -24,12 +24,12 @@
     "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f"
   },
   {
-    "path": "lineage/brand/favicon.svg",
-    "sha256": "3400ae6880216bfd8793fdfde3f5d6089bc646bc4ae19083552797e569a2a9f6"
+    "path": "lineage/brand/favicon.png",
+    "sha256": "488cf9179264d8025545b0ea977b630e4dfa32809527d9b6433f74f58f34c4b8"
   },
   {
-    "path": "lineage/brand/mark.svg",
-    "sha256": "5c67e93462fa8af2ee86344f2c1b6c24682e300e919db9d9cd90e0495340f197"
+    "path": "lineage/brand/mark.png",
+    "sha256": "ffb2fecb705e1401256bd2fc2c11eeb3476ad714177a36a1b321d422968d094f"
   },
   {
     "path": "lineage/brand/wordmark.svg",
@@ -65,6 +65,6 @@
   },
   {
     "path": "lineage/index.html",
-    "sha256": "ae6fc25ba4bde355e66557d9e6b5ef63528959567e7b98622d420517b6f62383"
+    "sha256": "97a639c9679229af3166df7373604816b55240abdd8a130fc0de3a6858e20e82"
   }
 ]

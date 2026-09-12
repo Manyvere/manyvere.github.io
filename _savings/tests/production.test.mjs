@@ -36,5 +36,5 @@ test('committed static artifact references existing generated assets under /line
   for (const link of links) { assert.ok(link.startsWith('/lineage/')); assert.ok(readFileSync(new URL('../..' + link, import.meta.url)).length > 0); }
   const files = readdirSync(new URL('../../lineage/assets/', import.meta.url));
   const js = files.filter(f => f.endsWith('.js')).map(f => read('../../lineage/assets/'+f)).join('\n');
-  for (const resource of ['/lineage/brand/mark.svg','/lineage/brand/wordmark.svg','/lineage/images/rock-albedo.jpg','/lineage/images/reference-horizon.png']) assert.ok(js.includes(resource));
+  for (const resource of ['/lineage/brand/mark.png','/lineage/brand/wordmark.svg','/lineage/images/rock-albedo.jpg','/lineage/images/reference-horizon.png']) assert.ok(js.includes(resource));
 });

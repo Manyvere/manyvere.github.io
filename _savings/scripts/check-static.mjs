@@ -5,7 +5,7 @@ const noSlash = await fetch(base + '/lineage?utm_source=qa', { redirect:'manual'
 assert.equal(noSlash.status,301); assert.equal(noSlash.headers.get('location'), '/lineage/?utm_source=qa');
 const html = await (await fetch(base+'/lineage/')).text();
 const resources = [...html.matchAll(/(?:src|href)="(\/lineage\/[^"?]+)(?:\?[^" ]*)?"/g)].map(m => m[1]);
-resources.push('/lineage/brand/mark.svg','/lineage/brand/wordmark.svg','/lineage/images/rock-albedo.jpg','/lineage/images/reference-horizon.png');
+resources.push('/lineage/brand/mark.png','/lineage/brand/wordmark.svg','/lineage/images/rock-albedo.jpg','/lineage/images/reference-horizon.png');
 for (const resource of resources) {
  const res=await fetch(base+resource); assert.equal(res.status,200,resource);
  assert.doesNotMatch(res.headers.get('content-type'),/text\/html/);

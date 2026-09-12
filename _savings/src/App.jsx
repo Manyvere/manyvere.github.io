@@ -231,7 +231,7 @@ export function App() {
     <a className="skip-link" href="#calculator">Skip to calculator</a>
     <SpaceScene key="warm-continuous-horizon" paused={paused} result={showResult} onInteract={() => setPaused(false)} />
     <header className="site-header">
-      <a className="brand" href="/lineage/" aria-label="Lineage home"><img className="brand-mark" src="/lineage/brand/mark.svg?v=20260908-book" alt="" /><img className="brand-wordmark" src="/lineage/brand/wordmark.svg" alt="Lineage" /></a>
+      <a className="brand" href="/lineage/" aria-label="Lineage home"><img className="brand-mark" src="/lineage/brand/mark.png?v=20260912-seal" alt="" /><img className="brand-wordmark" src="/lineage/brand/wordmark.svg" alt="Lineage" /></a>
       <nav aria-label="Page and account"><a className="login-link" href="https://manyvere.com/lineage/login/">Log in</a><a className="account-link" href="https://manyvere.com/lineage/login/">Create account <ArrowUpRight size={15} /></a><button type="button" className="motion-toggle" aria-label={paused ? 'Play animations' : 'Pause animations'} title={paused ? 'Play animations' : 'Pause animations'} aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? <Play size={16} weight="fill" /> : <Pause size={17} weight="regular" />}</button></nav>
     </header>
     <div id="calculator" data-motion-phase={motionPhase} data-motion-scope={motionScope} aria-busy={motionPhase !== 'idle'} onAnimationEnd={onNavigationAnimationEnd} style={{ '--step-out-duration': `${STEP_FADE.out}ms`, '--step-in-duration': `${STEP_FADE.in}ms` }}>

@@ -20,23 +20,23 @@
     },
     {
       "path": "index.html",
-      "sha256": "42e238193902f38c2d2cf564569421bd91101974d6f78eedac8914247d413bba"
+      "sha256": "1ba535df1f7122575aedccbb6e438eb34a257874d57ef220ef0e52a3faf66bfd"
     },
     {
       "path": "package-lock.json",
-      "sha256": "97a2685f690c8af92e8a2bd8216e8053035fe611e93921e0af9fdb5b79a42e6e"
+      "sha256": "3ababfc9db1df0ff690420bfd109c62171b89d948aa76804d6549a4a453b3c14"
     },
     {
       "path": "package.json",
-      "sha256": "8e2d5d7baa925dc9579c7497951d2b29e83daf55fb4b919b6c722eca69cdb2e5"
+      "sha256": "78b01fb622680b88c8bc195b7621d61629608da04c1e5ef2289d1fc2ae40adec"
     },
     {
-      "path": "public/brand/favicon.svg",
-      "sha256": "3400ae6880216bfd8793fdfde3f5d6089bc646bc4ae19083552797e569a2a9f6"
+      "path": "public/brand/favicon.png",
+      "sha256": "488cf9179264d8025545b0ea977b630e4dfa32809527d9b6433f74f58f34c4b8"
     },
     {
-      "path": "public/brand/mark.svg",
-      "sha256": "5c67e93462fa8af2ee86344f2c1b6c24682e300e919db9d9cd90e0495340f197"
+      "path": "public/brand/mark.png",
+      "sha256": "ffb2fecb705e1401256bd2fc2c11eeb3476ad714177a36a1b321d422968d094f"
     },
     {
       "path": "public/brand/wordmark.svg",
@@ -72,7 +72,7 @@
     },
     {
       "path": "src/App.jsx",
-      "sha256": "7e9f5f64c93b095ff2fecab7cd36ab9ae614da9386f65af7ad2f5bf0e74fdc8b"
+      "sha256": "9a9e7e5e41fb360e2d842340373e9f9ea15f74060966b2def781ec31c84a93e4"
     },
     {
       "path": "src/Calculation.jsx",
@@ -80,7 +80,7 @@
     },
     {
       "path": "src/SpaceScene.jsx",
-      "sha256": "4725155ac3e814b56b315d25d7ddbf02d4224dc6bed73672043a393175dabf58"
+      "sha256": "dd09b6515fbfa542c674eb8a8b991c15969d96c7c4f11d30dc1b8a04308d5c47"
     },
     {
       "path": "src/calculation.css",
@@ -100,7 +100,7 @@
     },
     {
       "path": "src/styles.css",
-      "sha256": "27fedea320c130edc83837ffe697f7a8dbefeda4490884291e2cb753895cfb43"
+      "sha256": "7b101208f0d33860c3c7da3681eac66335955a8dd66686ae06083e5dc0afdbd3"
     },
     {
       "path": "tests/model.test.mjs",

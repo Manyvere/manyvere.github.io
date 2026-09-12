@@ -78,3 +78,6 @@
 .question-label:focus{outline:none}
 .calculator-nav button[aria-disabled="true"]{cursor:default}
 .result-stage{animation:none}
+
+/* 2026-09-12: book-with-seal mark; wordmark baseline aligned to the mark bottom. */
+.brand{align-items:flex-end}.brand-wordmark{transform:translateY(11px)}
