@@ -25,7 +25,7 @@
   },
   {
     "path": "lineage/brand/favicon.png",
-    "sha256": "488cf9179264d8025545b0ea977b630e4dfa32809527d9b6433f74f58f34c4b8"
+    "sha256": "da69a89b53e4ee59ecac92535a0a912bd4682fab928bc1d061500df460c3c419"
   },
   {
     "path": "lineage/brand/mark.png",
@@ -65,6 +65,6 @@
   },
   {
     "path": "lineage/index.html",
-    "sha256": "97a639c9679229af3166df7373604816b55240abdd8a130fc0de3a6858e20e82"
+    "sha256": "281785d9db3a6b1becc4f54b2d8f922dabf9b93abd70bc47ae1fc039f204fcd2"
   }
 ]

@@ -20,7 +20,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "1ba535df1f7122575aedccbb6e438eb34a257874d57ef220ef0e52a3faf66bfd"
+      "sha256": "52c1209366d21423cea674af6bf70b604d26ee17ae120b5e415debe7249d068c"
     },
     {
       "path": "package-lock.json",
@@ -32,7 +32,7 @@
     },
     {
       "path": "public/brand/favicon.png",
-      "sha256": "488cf9179264d8025545b0ea977b630e4dfa32809527d9b6433f74f58f34c4b8"
+      "sha256": "da69a89b53e4ee59ecac92535a0a912bd4682fab928bc1d061500df460c3c419"
     },
     {
       "path": "public/brand/mark.png",
